@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rockland Area Public Golf</title>
+  <meta name="description" content="A directory of 14 public golf courses in and around Rockland County, NY, including nearby Bergen County, NJ and Orange County, NY.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Rockland Area Public Golf</a>
+      <p class="tagline">14 public courses in Rockland County, NY, and next door in Bergen County, NJ and Orange County, NY.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls" aria-label="Filter and sort courses">
+      <div class="control control--search">
+        <label for="search">Search</label>
+        <input id="search" type="search" placeholder="Course, town, designer…" autocomplete="off">
+      </div>
+
+      <fieldset class="control control--county">
+        <legend>County</legend>
+        <div class="chips" id="county-chips">
+          <button type="button" class="chip is-active" data-county="All">All</button>
+          <button type="button" class="chip" data-county="Rockland">Rockland</button>
+          <button type="button" class="chip" data-county="Bergen">Bergen</button>
+          <button type="button" class="chip" data-county="Orange">Orange</button>
+        </div>
+      </fieldset>
+
+      <div class="control control--sort">
+        <label for="sort">Sort by</label>
+        <select id="sort">
+          <option value="default">County, then name</option>
+          <option value="name">Name (A–Z)</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="holes-desc">Holes: most first</option>
+          <option value="holes-asc">Holes: fewest first</option>
+        </select>
+      </div>
+    </section>
+
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+
+    <section class="grid" id="grid" aria-label="Courses"></section>
+
+    <p class="empty" id="empty" hidden>No courses match. Try clearing the search or picking “All” counties.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>The green-fee range on each card is what a visitor with no resident card, county registration or membership pays for a round, from twilight or 9-hole rates up to weekend peak. Residents often pay less, and each course page has the full breakdown. Courses with no public rate say so and sort last by price. Facts were checked against course, town, county and NY State Parks pages on October 28, 2026. Rates change, so confirm with the course before you go. Course photos come from each course and are used with permission.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
