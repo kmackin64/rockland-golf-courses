@@ -82,6 +82,7 @@ a { color: var(--accent); }
   font-size: 0.875rem;
 }
 .site-footer p { max-width: 80ch; margin: 0; }
+.site-footer p + p { margin-top: 10px; }
 
 /* ---------- Controls ---------- */
 

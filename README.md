@@ -18,3 +18,10 @@ Double-click `index.html`, or serve the folder:
 - Plain-string facts come from official sources (course, town, county, NY State Parks).
 - `{ v: "...", dir: true }` facts were only found in golf-directory listings. They're marked † on the site.
 - `null` means no public figure was found, and the site says so. Don't fill these in with guesses.
+
+## Course facts page
+`course-facts.html` lists every course's facts as plain HTML, so chatbots and
+search engines can read them without running JavaScript. It is generated from
+`js/data.js`, so rebuild it after changing course data:
+
+    node tools/build-facts.js
