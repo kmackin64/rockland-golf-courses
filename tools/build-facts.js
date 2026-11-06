@@ -62,6 +62,7 @@ const html = `<!doctype html>
     <p>All 14 public golf courses in the Rockland Area Public Golf directory, in Rockland County, NY and nearby Bergen County, NJ and Orange County, NY. Facts were checked against official course, town, county and NY State Parks pages on October 28, 2026. Rates change, so confirm with the course before you go. Where a fact says it was not found, no public figure exists, so none is given.</p>
 ${window.COURSES.map(courseSection).join("\n")}
   </main>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>
 `;

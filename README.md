@@ -25,3 +25,9 @@ search engines can read them without running JavaScript. It is generated from
 `js/data.js`, so rebuild it after changing course data:
 
     node tools/build-facts.js
+
+## Chatbot
+Every page loads a DocsBot chat widget from `js/chatbot.js`. The bot answers
+from `course-facts.html`, so after rebuilding that page, use **Refresh** on the
+bot's source in the DocsBot dashboard. Its look and welcome message are set in
+DocsBot's widget settings.
